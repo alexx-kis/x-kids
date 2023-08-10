@@ -145,6 +145,7 @@ html {
 .header {
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 .header__top {
   height: 82px;
@@ -251,8 +252,8 @@ html {
 /*==================================== HERO ====================================*/
 .hero {
   background: url("../img/2.hero/hero-bg.png") no-repeat bottom/100% auto, #A7D0F6;
-  height: 100vh;
-  z-index: 0;
+  height: 58vw;
+  min-height: 840px;
 }
 .hero__inner {
   display: -webkit-box;
@@ -270,15 +271,16 @@ html {
           justify-content: center;
   height: 100%;
   padding-top: 36px;
+  position: relative;
 }
 .hero__girl {
   position: absolute;
   z-index: 2;
-  bottom: 9.5vw;
-  left: 46%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  bottom: 23vw;
+  left: 45%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .hero__girl img {
   width: 23vw;
@@ -320,4 +322,15 @@ html {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+}
+
+/*==================================== MEDIA ====================================*/
+/*==================================== MEDIA ====================================*/
+/*==================================== MEDIA ====================================*/
+/*==================================== MEDIA ====================================*/
+/*------------------------------ 1440 ------------------------------*/
+@media (min-width: 1440px) {
+  .hero__girl {
+    top: 10vw;
+  }
 }
