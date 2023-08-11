@@ -25,6 +25,10 @@ html {
 	display: block;
 }
 
+.underline {
+	text-decoration: underline;
+}
+
 
 /*==================================== HEADER ====================================*/
 /*==================================== HEADER ====================================*/
@@ -170,11 +174,7 @@ html {
 
 .hero {
 	background: url('../img/2.hero/hero-bg.png') no-repeat bottom / 100% auto, #A7D0F6;
-	// height: 100vh;
 	height: 58vw;
-	min-height: 840px;
-	// min-height: 100vh;
-	// z-index: 0;
 
 	&__inner {
 		display: flex;
@@ -190,13 +190,12 @@ html {
 		position: absolute;
 		z-index: 2;
 		bottom: 23vw;
-		
+
 		left: 45%;
 		transform: translateX(-50%);
 
 		img {
 			width: 23vw;
-			// max-width: 332px;
 		}
 	}
 
@@ -240,8 +239,462 @@ html {
 		font-style: normal;
 		font-weight: 900;
 		line-height: normal;
+		transition: all .3s;
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }
+
+
+/*==================================== MUSCLES ====================================*/
+/*==================================== MUSCLES ====================================*/
+
+.muscles {
+	padding: 120px 0;
+
+	&__heading {
+		text-align: center;
+		font-family: 'Rounds Black';
+		font-size: 35px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		color: $blue;
+		max-width: 650px;
+		margin: 0 auto 20px;
+	}
+
+	&__text {
+		margin-bottom: 75px;
+		text-align: center;
+		font-family: 'Avenir Roman';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		color: $blue;
+	}
+
+	&__panel {
+		display: flex;
+		justify-content: space-between;
+		height: 904px;
+	}
+
+	&__image-box {
+		position: relative;
+		width: 489px;
+	}
+
+	&__image {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		transition: all .3s;
+
+		&--active {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	&__info {
+		max-width: 622px;
+		padding-top: 15px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	&__list-item {}
+
+	&__item {
+		padding-bottom: 92px;
+		cursor: pointer;
+		position: relative;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+		&--active {
+			.muscles__item-title {
+				color: $pink;
+				font-size: 30px;
+			}
+		}
+	}
+
+	&__item-arrow {
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		transition: all .3s;
+
+		&--active {
+			visibility: visible;
+			opacity: 1;
+			transition: all .5s;
+		}
+
+		&--1 {
+			top: 12px;
+			left: -210px;
+		}
+
+		&--2 {
+			top: 12px;
+			left: -144px;
+		}
+
+		&--3 {
+			top: 12px;
+			left: -146px;
+		}
+
+		&--4 {
+			top: 12px;
+			left: -180px;
+		}
+
+		&--5 {
+			top: -115px;
+			left: -174px;
+		}
+	}
+
+	&__item-title {
+		margin-bottom: 35px;
+		font-family: 'Rounds Black';
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		color: $blue;
+		transition: all .3s;
+
+
+	}
+
+	&__item-text {
+		color: $blue;
+		font-family: 'Avenir Roman';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}
+
+
+/*==================================== FOOTER ====================================*/
+/*==================================== FOOTER ====================================*/
+
+.footer {
+	padding-top: 109px;
+	padding-bottom: 108px;
+	background: $light-blue;
+
+	&__heading {
+		color: #FFF;
+		text-align: center;
+		font-family: 'Rounds Black';
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 51px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		max-width: 851px;
+		margin: 0 auto 55px;
+	}
+
+	&__item {
+
+		&:first-child {
+			max-width: 220px;
+			flex: 1 1 220px;
+		}
+
+		&:nth-child(2) {
+			max-width: 279px;
+		}
+
+		&:last-child {
+			max-width: 272px;
+		}
+	}
+
+	&__item-title {
+		color: #FFF;
+		text-align: center;
+		font-family: 'Avenir Roman';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 10px;
+	}
+
+	&__item-subtitle {
+		color: $yellow;
+		text-align: center;
+		font-family: 'Rounds Black';
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	&__text {
+		color: #FFF;
+		text-align: center;
+		font-family: 'Avenir Roman';
+		font-size: 17px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		margin-bottom: 44px;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		max-width: 750px;
+		margin: 0 auto;
+	}
+	
+	&__form-inner {
+		overflow: hidden;
+		max-height: 0;
+		transition: all .8s;
+	}
+
+	&__form-input {
+		padding: 15px 0px 14px 34px;
+		display: flex;
+		align-items: center;
+		border-radius: 25px;
+		margin-bottom: 40px;
+		width: 100%;
+		line-height: 1;
+		height: 55px;
+		color: $blue;
+		font-family: 'Avenir Roman';
+		font-size: 19px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+
+		&:focus::placeholder {
+			color: transparent;
+		}
+
+		&::placeholder {
+			color: rgba(0, 50, 125, 0.30);
+			font-family: 'Avenir Roman';
+			font-size: 19px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 1.2;
+		}
+	}
+
+	&__select {
+		position: relative;
+		height: 55px;
+		width: 100%;
+		margin-bottom: 40px;
+
+		&[data-state="active"] {
+			.footer__select-title {
+				&::before {
+					transform: rotate(180deg);
+				}
+			}
+
+			.footer__select-content {
+				opacity: 1;
+			}
+
+			.footer__select-label+.footer__select-input+.footer__select-label {
+				max-height: 55px;
+			}
+		}
+	}
+
+	&__select-title {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding: 15px 0px 14px 34px;
+		border-radius: 25px;
+		background: #fff;
+		color: rgba(0, 50, 125, 0.30);
+		font-family: 'Avenir Roman';
+		font-size: 19px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+
+		cursor: pointer;
+
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			right: 16px;
+			width: 30px;
+			height: 30px;
+			transition: all .3s;
+			background: url('../img/4.footer/footer-delect-arrow.svg') no-repeat;
+		}
+
+		&--selected {
+			color: $blue;
+		}
+	}
+
+	&__select-content {
+		position: absolute;
+		top: 35px;
+		padding-top: 10px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background-color: #fff;
+		transition: all 0.3s ease-out;
+		opacity: 0;
+		z-index: 8;
+		border-radius: 0 0 25px 25px;
+	}
+
+	&__select-input {
+		display: none;
+
+		&:checked+label {
+			background-color: #dedede;
+		}
+
+		&:disabled+label {
+			opacity: 0.6;
+			pointer-events: none;
+		}
+	}
+
+	&__select-label {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 55px;
+		max-height: 0;
+		padding: 0 34px;
+		color: $blue;
+		font-family: 'Avenir Roman';
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		transition: all .3s;
+		cursor: pointer;
+		overflow: hidden;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&:last-child {
+			border-radius: 0 0 25px 25px;
+		}
+	}
+
+
+	&__form-label {
+		color: #FFF;
+		font-family: 'Avenir Roman';
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		max-width: 457px;
+		display: flex;
+		margin-bottom: 70px;
+	}
+
+	&__form-checkbox:not(:checked)+label:after {
+		transform: scale(0);
+	}
+
+	&__form-checkbox:not(:checked),
+	&__form-checkbox:checked {
+		opacity: 0;
+	}
+
+	&__form-checkbox:not(:checked)+label,
+	&__form-checkbox:checked+label {
+		position: relative;
+		padding-left: 47px;
+		cursor: pointer;
+	}
+
+	&__form-checkbox:not(:checked)+label:before,
+	&__form-checkbox:checked+label:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 22.5px;
+		height: 22.5px;
+		background: #FFF;
+		border-radius: 2px;
+		transition: all .2s;
+	}
+
+	&__form-checkbox:not(:checked)+label:after,
+	&__form-checkbox:checked+label:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url('../img/4.footer/checkbox.svg'), $light-blue;
+		border-radius: 2px;
+		width: 22.5px;
+		height: 22.5px;
+		color: $light-blue;
+		transition: all .2s;
+	}
+
+	&__form-button {
+		border-radius: 25px;
+		background: $yellow;
+		padding: 14px 36px 14px 35px;
+		color: #FFF;
+		text-align: center;
+		font-family: 'Avenir Roman';
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: normal;
+		max-width: 264px;
+		margin: 0 auto;
+		transition: all .3s;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+
 
 
 
