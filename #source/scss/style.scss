@@ -179,7 +179,7 @@ html {
 /*==================================== HERO ====================================*/
 
 .hero {
-	background: url('../img/2.hero/hero-bg.png') no-repeat center bottom / 100% auto, #A7D0F6;
+	background: url('../img/2.hero/hero-bg.svg') no-repeat center bottom / 100% auto, #A7D0F6;
 	height: 58vw;
 	min-height: 840px;
 
@@ -251,6 +251,10 @@ html {
 		transition: all .3s;
 		&:hover {
 			transform: scale(1.1);
+		}
+
+		&:nth-child(2) {
+			display: none;
 		}
 
 		&:last-child {
