@@ -45,6 +45,11 @@
 									654-32-10</a>
 							</div>
 						</div>
+						<div class="header__burger">
+							<div class="header__burger-line"></div>
+							<div class="header__burger-line"></div>
+							<div class="header__burger-line"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -69,7 +74,42 @@
 					</ul>
 				</div>
 			</div>
+			<div class="header__side">
+				<div class="container">
+					<nav class="header__side-menu">
+						<ul class="header__side-list">
+							<li class="header__side-item">
+								<a href="#" class="header__side-link">Наши достижения</a>
+							</li>
+							<li class="header__side-item">
+								<a href="#" class="header__side-link">Тренеры</a>
+							</li>
+							<li class="header__side-item">
+								<a href="#" class="header__side-link">Блог</a>
+							</li>
+							<li class="header__side-item">
+								<a href="#" class="header__side-link">Обучение на сноуборде</a>
+							</li>
+							<li class="header__side-item">
+								<a href="#" class="header__side-link">Школа сёрфинга</a>
+							</li>
+							<li class="header__side-item">
+								<a href="#" class="header__side-link">Летний лагерь</a>
+							</li>
+							<li class="header__side-item">
+								<a href="#" class="header__side-link">Тренировки на батутах</a>
+							</li>
+							<li class="header__side-item">
+								<a href="#" class="header__side-link">Школа вейкбординга</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
 		</header>
+
+		<div class="overlay"></div>
 
 		<main class="main">
 
@@ -87,6 +127,7 @@
 						</p>
 						<div class="hero__button-box">
 							<a href="#" class="hero__button button">Записаться</a>
+							<a href="#" class="hero__button button">+7 (987) 654-32-10</a>
 						</div>
 					</div>
 				</div>
@@ -179,6 +220,84 @@
 							</ul>
 						</div>
 					</div>
+					<div class="muscles__panel--mobile">
+						<ul class="muscles__panel-list">
+							<li class="muscles__panel-item">
+								<div class="muscles__panel-item-bg">
+									<img src="./img/3.muscles/wave-1.svg" alt="">
+								</div>
+								<div class="muscles__panel-image">
+									<img src="./img/3.muscles/boy-back.png" alt="">
+								</div>
+								<div class="muscles__panel-info">
+									<div class="muscles__panel-title">спина</div>
+									<p class="muscles__panel-text">
+										Абсолютно любые упражнения на батутах тренируют мышцы спины.
+									</p>
+								</div>
+							</li>
+							<li class="muscles__panel-item">
+								<div class="muscles__panel-info">
+									<div class="muscles__panel-title">живот</div>
+									<p class="muscles__panel-text">
+										Группировка и скручивание в воздухе помогут накачать пресс и сделать живот
+										подтянутым и упругим.
+									</p>
+								</div>
+								<div class="muscles__panel-item-bg">
+									<img src="./img/3.muscles/wave-2.svg" alt="">
+								</div>
+								<div class="muscles__panel-image">
+									<img src="./img/3.muscles/boy-stomach.png" alt="">
+								</div>
+							</li>
+							<li class="muscles__panel-item">
+								<div class="muscles__panel-item-bg">
+									<img src="./img/3.muscles/wave-3.svg" alt="">
+								</div>
+								<div class="muscles__panel-image">
+									<img src="./img/3.muscles/boy-buttocks.png" alt="">
+								</div>
+								<div class="muscles__panel-info">
+									<div class="muscles__panel-title">ягодицы</div>
+									<p class="muscles__panel-text">
+										Сильный импульс мышцам дает отталкивание в нижней точке прыжка. Для усиления
+										нагрузки можно во время прыжка развести
+										ноги в стороны или одну – вбок,
+										а другую – назад.
+									</p>
+								</div>
+							</li>
+							<li class="muscles__panel-item">
+								<div class="muscles__panel-info">
+									<div class="muscles__panel-title">ноги</div>
+									<p class="muscles__panel-text">
+										Прыжки на батуте обеспечивают лучшую мышечную нагрузку на эту группу.
+									</p>
+								</div>
+								<div class="muscles__panel-item-bg">
+									<img src="./img/3.muscles/wave-4.svg" alt="">
+								</div>
+								<div class="muscles__panel-image">
+									<img src="./img/3.muscles/boy-legs.png" alt="">
+								</div>
+							</li>
+							<li class="muscles__panel-item">
+								<div class="muscles__panel-item-bg">
+									<img src="./img/3.muscles/wave-5.svg" alt="">
+								</div>
+								<div class="muscles__panel-image">
+									<img src="./img/3.muscles/boy-arms.png" alt="">
+								</div>
+								<div class="muscles__panel-info">
+									<div class="muscles__panel-title">руки</div>
+									<p class="muscles__panel-text">
+										Разведение в стороны для удержания баланса тренирует их выносливость и силу.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 
@@ -217,15 +336,20 @@
 						<div class="footer-form__select footer__select" data-state="">
 							<div class="footer__select-title" data-default="Option 0">Выберите вид активности</div>
 							<div class="footer__select-content">
-								<input id="singleSelect0" class="footer__select-input" type="radio" name="singleSelect" checked />
+								<input id="singleSelect0" class="footer__select-input" type="radio" name="singleSelect"
+									checked />
 								<label for="singleSelect0" class="footer__select-label">Выберите вид активности</label>
-								<input id="singleSelect1" class="footer__select-input" type="radio" name="singleSelect" />
+								<input id="singleSelect1" class="footer__select-input" type="radio"
+									name="singleSelect" />
 								<label for="singleSelect1" class="footer__select-label">Вейкбординг</label>
-								<input id="singleSelect2" class="footer__select-input" type="radio" name="singleSelect"/>
+								<input id="singleSelect2" class="footer__select-input" type="radio"
+									name="singleSelect" />
 								<label for="singleSelect2" class="footer__select-label">Прыжки на батутах</label>
-								<input id="singleSelect3" class="footer__select-input" type="radio" name="singleSelect" />
+								<input id="singleSelect3" class="footer__select-input" type="radio"
+									name="singleSelect" />
 								<label for="singleSelect3" class="footer__select-label">Сёрфинг</label>
-								<input id="singleSelect4" class="footer__select-input" type="radio" name="singleSelect" />
+								<input id="singleSelect4" class="footer__select-input" type="radio"
+									name="singleSelect" />
 								<label for="singleSelect4" class="footer__select-label">Сноубординг</label>
 							</div>
 						</div>

@@ -103,3 +103,28 @@
 	}
 
 })();
+
+
+/*==================================== BURGER ====================================*/
+
+let burger = document.querySelector('.header__burger');
+let side = document.querySelector('.header__side');
+let overlay = document.querySelector('.overlay');
+let main = document.querySelector('.main');
+let footer = document.querySelector('.footer');
+
+
+
+
+
+burger.addEventListener('click', function () {
+	this.classList.toggle('header__burger--active');
+	side.classList.toggle('header__side--active');
+	overlay.classList.toggle('overlay--show');
+	main.classList.toggle('main--blurred');
+	footer.classList.toggle('footer--blurred');
+	
+	
+	
+	
+});
