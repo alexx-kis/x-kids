@@ -112,6 +112,7 @@ let side = document.querySelector('.header__side');
 let overlay = document.querySelector('.overlay');
 let main = document.querySelector('.main');
 let footer = document.querySelector('.footer');
+let header = document.querySelector('.header');
 
 
 
@@ -123,6 +124,7 @@ burger.addEventListener('click', function () {
 	overlay.classList.toggle('overlay--show');
 	main.classList.toggle('main--blurred');
 	footer.classList.toggle('footer--blurred');
+	// header.style.zIndex = 100;
 	
 	
 	
