@@ -216,7 +216,7 @@ html {
 		font-weight: 400;
 		line-height: normal;
 		z-index: 3;
-		margin-bottom: 40px;
+		margin-bottom: 56px;
 		max-width: 900px;
 	}
 
@@ -228,7 +228,7 @@ html {
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
-		margin-bottom: 40px;
+		margin-bottom: 50px;
 		z-index: 3;
 	}
 
@@ -484,6 +484,13 @@ html {
 		//font-weight: 300;
 		line-height: normal;
 		margin-bottom: 44px;
+
+		&--tablet {
+			display: none;
+		}
+		&--mobile {
+			display: none;
+		}
 	}
 
 	&__form {
@@ -649,6 +656,7 @@ html {
 		display: flex;
 		align-items: center;
 		margin-bottom: 70px;
+		margin-top: 5px;
 	}
 
 	&__form-checkbox:not(:checked)+label:after {
