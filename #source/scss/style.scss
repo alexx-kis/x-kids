@@ -13,6 +13,8 @@ html {
 	overflow: hidden;
 }
 
+
+
 .container {
 	max-width: 1260px;
 	padding: 0 30px;
@@ -20,10 +22,13 @@ html {
 	height: 100%;
 }
 
+
+
 .button {
 	border-radius: 20px;
 	display: block;
 }
+
 
 .underline {
 	text-decoration: underline;
@@ -53,8 +58,6 @@ html {
 		height: 100%;
 	}
 
-	&__logo {}
-
 	&__menu {
 		flex: 0 1 431px;
 	}
@@ -63,8 +66,6 @@ html {
 		display: flex;
 		justify-content: space-between;
 	}
-
-	&__menu-item {}
 
 	&__menu-link {
 		font-family: 'Avenir';
@@ -75,8 +76,6 @@ html {
 	&__button-box {
 		display: flex;
 	}
-
-	&__button-wrapper {}
 
 	&__button {
 		font-family: 'Avenir';
@@ -123,7 +122,6 @@ html {
 					color: $pink;
 				}
 			}
-
 		}
 
 		&:nth-child(2) {
@@ -165,7 +163,6 @@ html {
 		font-family: 'Avenir';
 		font-size: 16px;
 		font-style: normal;
-		//font-weight: 300;
 		line-height: normal;
 		transition: all .3s;
 	}
@@ -198,7 +195,6 @@ html {
 		position: absolute;
 		z-index: 2;
 		bottom: 23vw;
-
 		left: 45%;
 		transform: translateX(-50%);
 
@@ -246,9 +242,9 @@ html {
 		font-family: 'Avenir';
 		font-size: 20px;
 		font-style: normal;
-		//font-weight: 900;
 		line-height: normal;
 		transition: all .3s;
+
 		&:hover {
 			transform: scale(1.1);
 		}
@@ -331,8 +327,6 @@ html {
 		height: 100%;
 	}
 
-	&__list-item {}
-
 	&__item {
 		padding-bottom: 92px;
 		cursor: pointer;
@@ -397,8 +391,6 @@ html {
 		line-height: normal;
 		color: $blue;
 		transition: all .3s;
-
-
 	}
 
 	&__item-text {
@@ -481,13 +473,13 @@ html {
 		font-family: 'Avenir';
 		font-size: 17px;
 		font-style: normal;
-		//font-weight: 300;
 		line-height: normal;
 		margin-bottom: 44px;
 
 		&--tablet {
 			display: none;
 		}
+
 		&--mobile {
 			display: none;
 		}
@@ -499,7 +491,7 @@ html {
 		max-width: 750px;
 		margin: 0 auto;
 	}
-	
+
 	&__form-inner {
 		overflow: hidden;
 		max-height: 0;
@@ -576,7 +568,6 @@ html {
 		line-height: normal;
 		z-index: 100;
 		position: relative;
-
 		cursor: pointer;
 
 		&::before {
@@ -650,7 +641,6 @@ html {
 		font-family: 'Avenir';
 		font-size: 13px;
 		font-style: normal;
-		//font-weight: 300;
 		line-height: normal;
 		max-width: 457px;
 		display: flex;
@@ -713,21 +703,17 @@ html {
 		font-family: 'Avenir';
 		font-size: 20px;
 		font-style: normal;
-		//font-weight: 900;
 		line-height: normal;
 		width: 264px;
 		height: 55px;
 		margin: 0 auto;
 		transition: all .3s;
+
 		&:hover {
 			transform: scale(1.1);
 		}
 	}
 }
-
-
-
-
 
 
 
